@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .topo {
+    background-color: rgb(214, 198, 153);
+    color: rgb(138, 104, 11);
+    padding: 10px 0;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .logo img {
+    width: 200px;
+  }
+  
+  .navegacao ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navegacao ul li a {
+    background-color: rgb(227, 227, 227);
+    color: rgb(87, 62, 3);
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .navegacao ul li a:hover {
+    text-decoration: underline;
+    background-color: black;
+    color: white;
+  }
+  
+  .botoes {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .botao-login, .botao-reserva {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .botao-login:hover, .botao-reserva:hover {
+    background-color: #0056b3;
+  }
+  

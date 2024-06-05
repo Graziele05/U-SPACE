@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .rodape {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .contato, .links-rapidos, .redes-sociais {
+    flex: 1;
+    padding: 0 20px;
+  }
+  
+  .contato h4, .links-rapidos h4, .redes-sociais h4 {
+    margin-bottom: 10px;
+  }
+  
+  .contato p, .links-rapidos ul, .redes-sociais a {
+    margin: 5px 0;
+  }
+  
+  .links-rapidos ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .links-rapidos ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .links-rapidos ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .redes-sociais a img {
+    height: 30px;
+    margin: 0 10px;
+  }
+  
+  .creditos {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #555;
+    padding-top: 10px;
+  }
+  
