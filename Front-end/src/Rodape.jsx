@@ -7,9 +7,9 @@ const Rodape = () => {
       <div className="container">
         <div className="contato">
           <h4>Contato</h4>
-          <p>Email: contato@uspace.com</p>
-          <p>Telefone: (11) 1234-5678</p>
-          <p>Endereço: Rua Exemplo, 123, São Paulo, SP</p>
+          <p>Email: c@uspace.com</p>
+          <p>Telefone: (75) 1234-5678</p>
+          <p>Endereço: Rua Santa Terezinha, 113, Alagoinhas, BA</p>
         </div>
         <div className="links-rapidos">
           <h4>Links Rápidos</h4>
