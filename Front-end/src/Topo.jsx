@@ -1,4 +1,3 @@
-import React from 'react';
 import './Topo.css';
 
 const Topo = () => {
@@ -15,7 +14,7 @@ const Topo = () => {
           <hr className="nav-line" />
           <ul>
             <li><a href="/">Home</a></li>
-            <li><a href="/menu">Cardápio</a></li>
+            <li><a href="/cardapio">Cardápio</a></li>
             <li><a href="/reservas">Reservas</a></li>
             <li><a href="/contato">Contato</a></li>
           </ul>

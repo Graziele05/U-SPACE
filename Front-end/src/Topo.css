@@ -1,23 +1,21 @@
-
 .nav-title {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 10px;
   color: rgb(87, 62, 3);
   text-align: center;
-margin-top: 6.5%;
-  margin-left: 15%;
+  margin-top: 6.5%;
+  margin-left: 91%;
 }
-
 
 .nav-line {
-  border: 0;
-  height: 2px;
+  border: 6;
+  width: 350px;
+  height: 5px;
   background: rgb(87, 62, 3);
-  margin-bottom: 15px; 
-  margin-left: 30%;
+  margin-bottom: 15px;
+  margin-left: 75%;
 }
-
 
 body {
   margin: 0;
@@ -25,7 +23,7 @@ body {
 }
 
 .topo {
-  background-color: rgb(214, 198, 153);
+  background-color: rgb(247, 199, 127);
   color: rgb(138, 104, 11);
   padding: 1px 0;
   margin-top: -0%;
@@ -43,12 +41,13 @@ body {
 }
 
 .logo img {
-  width: 250px;
-  margin-top: -8%;
+  width: 500px;
+  margin-left: -55%;
+
 }
 
 .navegacao {
-  width: 100%;
+  width: 200%;
 }
 
 .navegacao ul {
@@ -58,30 +57,34 @@ body {
   margin: 0;
   padding: 0;
   margin-top: 0;
-  justify-content: center; 
-  margin-left: 15%;
+  justify-content: center;
+  margin-left: 100%;
 }
 
 .navegacao ul li a {
-  background-color: rgb(227, 227, 227);
   color: rgb(87, 62, 3);
   text-decoration: none;
   font-size: 25px;
+  border: 25;
 }
 
 .navegacao ul li a:hover {
-  text-decoration: underline;
-  background-color: black;
-  color: white;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.466);
+  border-radius: 30px;
+  border-width: 10px; /* ou outro valor desejado */
 }
+
+
 
 .botoes {
   display: flex;
   gap: 10px;
 }
 
-.botao-login, .botao-reserva {
-  background-color: #007BFF;
+.botao-login,
+.botao-reserva {
+  background-color: #007bff;
   color: white;
   padding: 10px 20px;
   text-decoration: none;
@@ -89,6 +92,7 @@ body {
   transition: background-color 0.3s;
 }
 
-.botao-login:hover, .botao-reserva:hover {
+.botao-login:hover,
+.botao-reserva:hover {
   background-color: #0056b3;
 }

@@ -1,18 +1,18 @@
-import './Home.css'
-import Topo from './Topo';
-import Rodape from './Rodape';
+import "./Home.css";
+import Topo from "./Topo";
+import Rodape from "./Rodape";
+import Menu from "./Menu";
 function Home() {
-
-
   return (
     <>
-      <div>
-        <Topo/>
-        <h1> Olá...</h1>
-        <Rodape/>
-     </div>
+      <div className="corpo">
+        <Topo />
+        <Menu />
+
+        <Rodape />
+      </div>
     </>
-  )
+  );
 }
 
-export default Home
+export default Home;

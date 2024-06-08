@@ -1,0 +1,19 @@
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .menu img {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: transform 0.3s;
+  }
+  
+  .menu img:hover {
+    transform: scale(1.1);
+  }
+  
