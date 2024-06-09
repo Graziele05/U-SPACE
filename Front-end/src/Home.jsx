@@ -1,4 +1,4 @@
-import "./Home.css";
+import "./Home.css"
 import Topo from "./Topo";
 import Rodape from "./Rodape";
 import Menu from "./Menu";

@@ -22,9 +22,9 @@ const Rodape = () => {
         </div>
         <div className="redes-sociais">
           <h4>Siga-nos</h4>
-          <a href="#"><img src="facebook-icon.png" alt="Facebook" /></a>
-          <a href="#"><img src="instagram-icon.png" alt="Instagram" /></a>
-          <a href="#"><img src="twitter-icon.png" alt="Twitter" /></a>
+          <a href="#"><img src="/Front-end/public/8.png" alt="Linkdin" /></a>
+          <a href="#"><img src="/Front-end/public/7.png" alt="Instagram" /></a>
+          <a href="#"><img src="/Front-end/public/6.png" alt="Facbook" /></a>
         </div>
       </div>
       <div className="creditos">
