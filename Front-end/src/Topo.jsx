@@ -17,7 +17,7 @@ const Topo = () => {
             <li><Link to="/">Home</Link></li>
             <li><Link to="/cardapio">Cardápio</Link></li>
             <li><Link to="/formulariointegrado">Reservar</Link></li>
-            <li><Link to="/FormularioIntegrado">Cliente</Link></li>
+          
           </ul>
         </nav>
       </div>

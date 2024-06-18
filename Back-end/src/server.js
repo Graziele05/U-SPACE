@@ -1,18 +1,12 @@
 import express from "express";
 import cors from "cors";
-import { getAllClients, createClient, updateClient, deleteClient, getAllTables, createTable, updateTable, deleteTable, getAllReservations, createReservation, updateReservation, deleteReservation } from "./controllers.js";
+import { getAllTables, createTable, updateTable, deleteTable, getAllReservations, createReservation, updateReservation, deleteReservation } from "./controllers.js";
 import db from "./db.js";
-
 const app = express();
+
 
 app.use(express.json());
 app.use(cors());
-
-
-app.get('/clientes', getAllClients);
-app.post('/clientes', createClient);
-app.put('/clientes/:id', updateClient);
-app.delete('/clientes/:id', deleteClient);
 
 
 app.get('/mesas', getAllTables);
