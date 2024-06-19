@@ -31,7 +31,7 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
-    gap: 10px; /* Espaço entre os inputs */
+    gap: 10px;
 }
 
 .form-row > div {
@@ -39,8 +39,8 @@
 }
 
 .reserva-container label {
-    margin-bottom: 5px; /* Ajustando a margem inferior */
-    font-size: 18px; /* Mantendo o mesmo tamanho de fonte */
+    margin-bottom: 5px; 
+    font-size: 18px; 
     color: #555;
 }
 

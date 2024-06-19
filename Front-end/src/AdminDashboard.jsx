@@ -9,8 +9,8 @@ const AdminDashboard = () => {
         navigate('/Admin/RegisterMesa');
     };
 
-    const handleAdicionarCardapio = () => {
-        navigate('/admin/AddCardapio');
+    const handleCardapio = () => {
+        navigate('/Cliente/Cardapio');
     };
 
     const handleFazerReserva = () => {
@@ -38,9 +38,9 @@ const handleviewreserva = () => {
                     <i className="fas fa-table"></i>
                     Cadastrar Mesa
                 </button>
-                <button className="dashboard-button" onClick={handleAdicionarCardapio}>
+                <button className="dashboard-button" onClick={handleCardapio}>
                     <i className="fas fa-utensils"></i>
-                    Adicionar Cardápio
+                    Ver Cardápio
                 </button>
                 <button className="dashboard-button" onClick={handleFazerReserva}>
                     <i className="fas fa-calendar-check"></i>

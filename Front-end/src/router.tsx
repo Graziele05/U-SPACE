@@ -9,6 +9,7 @@ import EditMesa from './Admin/EditMesa';
 import Reserva from './Admin/Reserva';
 import Cardapio from './Cliente/Cardapio';
 import SelectReserva from './Admin/Select';
+import Reservac from './Cliente/Reservac';
 const App = () => {
     return (
         <Router>
@@ -22,6 +23,7 @@ const App = () => {
                 <Route path='/admin/reserva' element={<Reserva />}/>
                 <Route path='/cliente/cardapio' element={<Cardapio />}/>
                 <Route path='/admin/select' element={<SelectReserva />}/>
+                <Route path='/cliente/reservac' element={<Reservac />}/>
             </Routes>
         </Router>
     );

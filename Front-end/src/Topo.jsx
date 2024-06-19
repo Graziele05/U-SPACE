@@ -15,8 +15,8 @@ const Topo = () => {
           <hr className="nav-line" />
           <ul>
             <li><Link to="/">Home</Link></li>
-            <li><Link to="/cardapio">Cardápio</Link></li>
-            <li><Link to="/formulariointegrado">Reservar</Link></li>
+            <li><Link to="/Cliente/Cardapio">Cardápio</Link></li>
+            <li><Link to="/Cliente/Reservac">Reservar</Link></li>
           
           </ul>
         </nav>

@@ -1,68 +1,85 @@
 .cardapio {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: Arial, sans-serif;
-    padding: 20px;
-    background-color: rgb(216, 213, 60);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f1df8f;
+}
+
+.cardapio h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  color: #8b4513;
+  margin-bottom: 20px;
+}
+
+.cardapio-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; 
+  margin-bottom: 20px; 
+}
+
+.cardapio-item {
+  display: flex;
+  align-items: center;
+  width: 200px; 
+  margin: 10px;
+  background-color: #fff; 
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cardapio-item img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.cardapio-item-details {
+  text-align: left;
+}
+
+.cardapio-item-details h3 {
+  font-size: 18px;
+  color: #8b4513;
+  margin-bottom: 5px;
+}
+
+.cardapio-item-details p {
+  font-size: 14px;
+  color: #8b4513;
+  margin-bottom: 5px;
+}
+
+.cardapio-item-details p.price {
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .cardapio {
+    padding: 10px;
   }
-  
-  .cardapio h2 {
-    font-size: 24px;
-    color: #8b4513; 
-    margin-bottom: 10px;
-  }
-  
+
   .cardapio-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+    width: 150px; 
   }
-  
+
   .cardapio-item img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-right: 20px;
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
   }
-  
-  .cardapio-item-details {
-    flex: 1;
-  }
-  
+
   .cardapio-item-details h3 {
-    font-size: 18px;
-    color: #8b4513; 
-    margin-bottom: 5px;
+    font-size: 16px;
   }
-  
+
   .cardapio-item-details p {
-    font-size: 14px;
-    color: #8b4513;  
-    margin-bottom: 5px;
+    font-size: 12px;
   }
-  
-  .cardapio-item-details p.price {
-    font-weight: bold;
-  }
-  
-  @media (max-width: 768px) {
-    .cardapio {
-      padding: 10px;
-    }
-  
-    .cardapio-item img {
-      width: 80px;
-      height: 80px;
-      margin-right: 10px;
-    }
-  
-    .cardapio-item-details h3 {
-      font-size: 16px;
-    }
-  
-    .cardapio-item-details p {
-      font-size: 12px;
-    }
-  }
-  
+}

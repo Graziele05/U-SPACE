@@ -1,0 +1,77 @@
+.cadastro-reservac-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    background-color: #f1df8f;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f1df8f;
+}
+
+.cadastro-reservac-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 36px;
+}
+
+.cadastro-reservac-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.cadastro-reservac-container label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #555;
+}
+
+.cadastro-reservac-container input,
+.cadastro-reservac-container select,
+.cadastro-reservac-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.cadastro-reservac-container input:focus,
+.cadastro-reservac-container select:focus,
+.cadastro-reservac-container textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.cadastro-reservac-container button {
+    padding: 10px 20px;
+    background-color: #b19103;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cadastro-reservac-container button:hover {
+    background-color: #000000;
+}
+
+.cadastro-reservac-container textarea {
+    resize: vertical;
+    height: 100px;
+}

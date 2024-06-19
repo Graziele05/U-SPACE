@@ -7,7 +7,7 @@ const ClienteDashboard = () => {
     const navigate = useNavigate();
 
     const handleFazerReserva = () => {
-        navigate('/reserva');
+        navigate('/Cliente/Reservac');
     };
 
     const handleVerCardapio = () => {
