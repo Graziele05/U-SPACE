@@ -21,6 +21,12 @@ const AdminDashboard = () => {
         navigate('/admin/EditMesa');
     };
 
+
+const handleviewreserva = () => {
+    navigate(`/admin/Select`);
+
+    };
+
     return (
         <div className="admin-dashboard-container">
             <div className="logo-container">
@@ -44,6 +50,10 @@ const AdminDashboard = () => {
                 <button className="dashboard-button" onClick={handleeditarMesa}>
                     <i className="fas fa-calendar"></i>
                     Editar Mesa
+                </button>
+                <button className="dashboard-button" onClick={handleviewreserva}>
+                    <i className="fas fa-calendar"></i>
+                    Excluir Reserva
                 </button>
             </div>
         </div>

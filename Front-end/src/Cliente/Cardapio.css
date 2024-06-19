@@ -9,7 +9,7 @@
   
   .cardapio h2 {
     font-size: 24px;
-    color: #8b4513; /* Marrom */
+    color: #8b4513; 
     margin-bottom: 10px;
   }
   
@@ -32,13 +32,13 @@
   
   .cardapio-item-details h3 {
     font-size: 18px;
-    color: #8b4513; /* Marrom */
+    color: #8b4513; 
     margin-bottom: 5px;
   }
   
   .cardapio-item-details p {
     font-size: 14px;
-    color: #8b4513; /* Marrom */
+    color: #8b4513;  
     margin-bottom: 5px;
   }
   

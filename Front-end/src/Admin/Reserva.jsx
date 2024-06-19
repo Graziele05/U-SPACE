@@ -3,7 +3,7 @@ import './Reserva.css';
 
 const Reserva = () => {
     const [mesas, setMesas] = useState([]);
-    const [nomeCliente, setNomeCliente] = useState('');
+    const [nomecliente, setNomeCliente] = useState('');
     const [dataNascimento, setDataNascimento] = useState('');
     const [cpf, setCpf] = useState('');
     const [telefone, setTelefone] = useState('');
@@ -32,7 +32,7 @@ const Reserva = () => {
         event.preventDefault();
 
         const reserva = {
-            nomecliente: nomeCliente,
+            nomecliente: nomecliente,
             datanascimento: dataNascimento,
             cpf: cpf,
             telefone: telefone,
@@ -63,58 +63,72 @@ const Reserva = () => {
     };
 
     return (
+        <div className='body'>
         <div className="reserva-container">
             <h2>Fazer Reserva</h2>
             <form onSubmit={handleSubmit}>
-                <label>
-                    Nome do Cliente:
-                    <input type="text" value={nomeCliente} onChange={(e) => setNomeCliente(e.target.value)} required />
-                </label>
-                <label>
-                    Data de Nascimento:
-                    <input type="date" value={dataNascimento} onChange={(e) => setDataNascimento(e.target.value)} required />
-                </label>
-                <label>
-                    CPF:
-                    <input type="text" value={cpf} onChange={(e) => setCpf(e.target.value)} required />
-                </label>
-                <label>
-                    Telefone:
-                    <input type="text" value={telefone} onChange={(e) => setTelefone(e.target.value)} required />
-                </label>
-                <label>
-                    Mesa:
-                    <select value={mesaId} onChange={(e) => setMesaId(e.target.value)} required>
-                        <option value="">Selecione uma mesa</option>
-                        {mesas.map((mesa) => (
-                            <option key={mesa.mesa_id} value={mesa.mesa_id}>
-                                {mesa.numero} - {mesa.localizacao}
-                            </option>
-                        ))}
-                    </select>
-                </label>
-                <label>
-                    Data da Reserva:
-                    <input type="date" value={dataReserva} onChange={(e) => setDataReserva(e.target.value)} required />
-                </label>
-                <label>
-                    Hora da Reserva:
-                    <input type="time" value={horaReserva} onChange={(e) => setHoraReserva(e.target.value)} required />
-                </label>
-                <label>
-                    Número de Pessoas:
-                    <input type="number" value={numeroPessoas} onChange={(e) => setNumeroPessoas(e.target.value)} required min="1" />
-                </label>
-                <label>
-                    Status:
-                    <input type="text" value={status} onChange={(e) => setStatus(e.target.value)} required />
-                </label>
-                <label>
-                    Comentários:
-                    <textarea value={comentarios} onChange={(e) => setComentarios(e.target.value)} />
-                </label>
+                <div className="form-row">
+                    <div>
+                        <label>Nome do Cliente:</label>
+                        <input type="text" value={nomecliente} onChange={(e) => setNomeCliente(e.target.value)} required />
+                    </div>
+                    <div>
+                        <label>Data de Nascimento:</label>
+                        <input type="date" value={dataNascimento} onChange={(e) => setDataNascimento(e.target.value)} required />
+                    </div>
+                </div>
+                <div className="form-row">
+                    <div>
+                        <label>CPF:</label>
+                        <input type="text" value={cpf} onChange={(e) => setCpf(e.target.value)} required />
+                    </div>
+                    <div>
+                        <label>Telefone:</label>
+                        <input type="text" value={telefone} onChange={(e) => setTelefone(e.target.value)} required />
+                    </div>
+                </div>
+                <div className="form-row">
+                    <div>
+                        <label>Mesa:</label>
+                        <select value={mesaId} onChange={(e) => setMesaId(e.target.value)} required>
+                            <option value="">Selecione uma mesa</option>
+                            {mesas.map((mesa) => (
+                                <option key={mesa.mesa_id} value={mesa.mesa_id}>
+                                    {mesa.numero} - {mesa.localizacao}
+                                </option>
+                            ))}
+                        </select>
+                    </div>
+                    <div>
+                        <label>Data da Reserva:</label>
+                        <input type="date" value={dataReserva} onChange={(e) => setDataReserva(e.target.value)} required />
+                    </div>
+                </div>
+                <div className="form-row">
+                    <div>
+                        <label>Hora da Reserva:</label>
+                        <input type="time" value={horaReserva} onChange={(e) => setHoraReserva(e.target.value)} required />
+                    </div>
+                    <div>
+                        <label>Número de Pessoas:</label>
+                        <input type="number" value={numeroPessoas} onChange={(e) => setNumeroPessoas(e.target.value)} required min="1" />
+                    </div>
+                </div>
+                <div className="form-row">
+                    <div>
+                        <label>Status:</label>
+                        <input type="text" value={status} onChange={(e) => setStatus(e.target.value)} required />
+                    </div>
+                </div>
+                <div className="form-row">
+                    <div>
+                        <label>Comentários:</label>
+                        <textarea value={comentarios} onChange={(e) => setComentarios(e.target.value)} />
+                    </div>
+                </div>
                 <button type="submit">Criar Reserva</button>
             </form>
+        </div>
         </div>
     );
 };

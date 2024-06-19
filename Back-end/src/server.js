@@ -1,6 +1,6 @@
 import express from "express";
 import cors from "cors";
-import { getAllTables, createTable, updateTable, deleteTable, getAllReservations, createReservation, updateReservation, deleteReservation } from "./controllers.js";
+import { getAllTables, createTable, updateTable, deleteTable, getAllReservation, createReservation, updateReservation, deleteReserva } from "./controllers.js";
 import db from "./db.js";
 const app = express();
 
@@ -15,10 +15,10 @@ app.put('/mesas/:id', updateTable);
 app.delete('/mesas/:id', deleteTable);
 
 
-app.get('/reservas', getAllReservations);
+app.get('/reservas', getAllReservation);
 app.post('/reservas', createReservation);
 app.put('/reservas/:id', updateReservation);
-app.delete('/reservas/:id', deleteReservation);
+app.delete('/reservas/:id', deleteReserva);
 
 const PORT = 3000;
 app.listen(PORT, () => {
